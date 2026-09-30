@@ -1,143 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Gupta - Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Krishna Gupta | AI/ML Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Krishna Gupta, a final-year B.Tech student specializing in Artificial Intelligence and Machine Learning, showcasing AI, ML, Generative AI and Data Science projects.">
+  <meta name="author" content="Krishna Gupta">
+  <meta name="keywords"
+    content="Krishna Gupta, AI Engineer, Machine Learning Engineer, Portfolio, B.Tech CSE, LangChain, RAG, Agentic AI, Python, PyTorch, Data Science">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Krishna Gupta | AI/ML Engineer Portfolio">
+  <meta property="og:description"
+    content="Final-year B.Tech CSE student specializing in AI & Machine Learning. Building practical AI systems, multi-agent frameworks, and RAG pipelines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/itskrishn07">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Krishna Gupta | AI/ML Engineer Portfolio">
+  <meta name="twitter:description" content="Portfolio of Krishna Gupta - AI & Machine Learning Aspirant.">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">Portfolio</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Krishna Gupta</h1>
-                <p class="subtitle">Web Developer & Designer</p>
-                <p class="description">I craft beautiful digital experiences that blend creativity with functionality. Passionate about turning ideas into reality through code and design.</p>
-                <a href="#portfolio" class="cta-button">View My Work</a>
-            </div>
-        </div>
-    </section>
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" aria-label="Krishna Gupta Portfolio Home">
+        <span class="logo-symbol">&lt;</span>KG<span class="logo-symbol"> /&gt;</span>
+      </a>
 
-    <!-- About Section -->
-    <section id="about" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hi! I’m Krishna Gupta, a B.Tech Computer Science student specializing in Artificial Intelligence, Machine Learning, and Deep Learning. I’m passionate about full-stack web development and currently focused on mastering the MERN Stack.</p>
-                    <p>I’ve built real-world projects like e-commerce website clones using React.js, Tailwind CSS, Node.js, and MongoDB.</p>
-                    <p>I'm always excited to collaborate on projects that challenge me and push the boundaries of what's possible on the web.</p>
-                </div>
-                <div class="about-image">
-                    <div class="profile-image"><img class="my-image" src="assests/my_image.jpeg" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <!-- Skills added by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="portfolio-grid">
-                <!-- Projects Added by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>Ready to bring your next project to life? I'd love to hear from you and discuss how we can work together to create something amazing.</p>
-                <form class="contact-form">
-                    <div class="form-row">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-    <div class="footer-container">
-      <!-- About -->
-      <div class="footer-section about">
-        <h2 class="logo-text"><span>Krishna</span> Gupta</h2>
-        <p class="logo-para">A passionate full-stack developer creating beautiful, functional web experiences that make a difference. Let's build something amazing together.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-links-two">
-        <!-- Quick Links -->
-      <div class=" first-links links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <!-- Services -->
-      <div class="first-links services">
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Mobile Apps</a></li>
-          <li><a href="#">UI/UX Design</a></li>
-          <li><a href="#">Consulting</a></li>
-        </ul>
+      <div class="nav-actions">
+        <a href="https://github.com/itskrishn07" target="_blank" rel="noopener noreferrer" class="nav-icon-link"
+          aria-label="GitHub Profile">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/krishna-gupta-b7a561317/" target="_blank" rel="noopener noreferrer"
+          class="nav-icon-link" aria-label="LinkedIn Profile">
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+          </svg>
+        </a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
     </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-canvas-container">
+        <canvas id="hero-canvas"></canvas>
       </div>
 
-    <div class="footer-bottom">
-      <p style="padding-bottom: 7px;">Made with <span class="heart">❤</span> by Krishna Gupta</p>
-      <p>&copy; 2025 Krishna Gupta. All rights reserved.</p>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-tag hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Final-Year B.Tech CSE · TMU Moradabad</span>
+          </div>
+
+          <h1 class="hero-title">
+            Building practical <span class="gradient-text">AI &amp; ML</span> systems.
+          </h1>
+
+          <p class="hero-subtitle">
+            Final-year B.Tech CSE student specializing in Artificial Intelligence and Machine Learning, with hands-on
+            experience building AI-powered applications, multi-agent systems, RAG pipelines, and machine learning
+            projects.
+          </p>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label">Name</span>
+              <span class="meta-value">Krishna Gupta</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Target Role</span>
+              <span class="meta-value">AI/ML Engineer Aspirant</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Academic Score</span>
+              <span class="meta-value">CGPA 9.1</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+            </a>
+
+
+            <!-- REPLACE '#' BELOW WITH YOUR ACTUAL PDF RESUME PATH (e.g., assets/Krishna_Gupta_Resume.pdf) -->
+            <a href="https://drive.google.com/file/d/1txT1WfKiaD38vukCQE-bUpF9apjyxe6q/view?usp=sharing"
+              class="btn btn-outline" aria-label="Download Resume (Replace # with path)">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <polyline points="9 15 12 18 15 15"></polyline>
+              </svg>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">agent_pipeline.py</span>
+            </div>
+            <div class="terminal-body">
+              <pre><code><span class="code-keyword">from</span> langchain.agents <span class="code-keyword">import</span> AgentExecutor
+<span class="code-keyword">from</span> rag.pipeline <span class="code-keyword">import</span> VectorSearchEngine
+
+<span class="code-comment"># Initializing multi-agent network</span>
+<span class="code-keyword">class</span> <span class="code-func">ResearchAgentNetwork</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self, query: str):
+        self.search_agent = SearchAgent()
+        self.scraper_agent = ScraperAgent()
+        self.writer_agent = WriterAgent()
+        self.critic_agent = CriticAgent()
+    
+    <span class="code-keyword">def</span> <span class="code-func">execute</span>(self):
+        docs = self.search_agent.fetch(self.query)
+        data = self.scraper_agent.extract(docs)
+        draft = self.writer_agent.synthesize(data)
+        <span class="code-keyword">return</span> self.critic_agent.refine(draft)
+
+<span class="code-comment"># Status: Execution successful (9.115 CGPA precision)</span>
+<span class="code-output">> System ready. Exploring LLM & Vision RAG.</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Practical AI/ML implementations built with LLMs, Multi-Agent frameworks, RAG, and Vision models.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: ResearchMind -->
+          <article class="project-card reveal" data-url="https://github.com/itskrishn07/ResearchMind">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">Multi-Agent AI Research System</span>
+              </div>
+              <h3 class="project-title">ResearchMind</h3>
+            </div>
+
+            <p class="project-description">
+              An AI-powered multi-agent research system designed to automate research workflows by dividing the process
+              into specialized agents for searching, scraping, writing, and critique.
+            </p>
+
+            <div class="project-architecture">
+              <span class="arch-label">Agent Flow:</span>
+              <div class="arch-steps">
+                <span class="arch-step">Search Agent</span>
+                <span class="arch-arrow">→</span>
+                <span class="arch-step">Scraper Agent</span>
+                <span class="arch-arrow">→</span>
+                <span class="arch-step">Writer Agent</span>
+                <span class="arch-arrow">→</span>
+                <span class="arch-step">Critic Agent</span>
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Agentic AI</span>
+              <span class="tech-tag">LLMs</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/itskrishn07/ResearchMind" target="_blank" rel="noopener noreferrer"
+                class="project-btn project-btn-primary" aria-label="GitHub Repository for ResearchMind">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>Source Code</span>
+              </a>
+              <a href="https://research-mind-nine.vercel.app" target="_blank" rel="noopener noreferrer"
+                class="project-btn project-btn-secondary" aria-label="Live Demo for ResearchMind">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: MediGuru -->
+          <article class="project-card reveal" data-url="https://github.com/itskrishn07/MediGuru">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">AI Prescription Report Analyzer</span>
+              </div>
+              <h3 class="project-title">MediGuru</h3>
+            </div>
+
+            <p class="project-description">
+              An AI-powered document analysis application that uses vision-language models to analyze prescription and
+              medical-report documents and provide structured summaries with contextual question answering.
+            </p>
+
+            <div class="disclaimer-banner">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Educational AI document-analysis project. Not intended for medical diagnosis.</span>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Gemini Vision API</span>
+              <span class="tech-tag">PyMuPDF</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">Mistral Embeddings</span>
+              <span class="tech-tag">RAG</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/itskrishn07/MediGuru" target="_blank" rel="noopener noreferrer"
+                class="project-btn project-btn-primary" aria-label="GitHub Repository for MediGuru">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                <span>Source Code</span>
+              </a>
+              <a href="https://medi-guru-one.vercel.app" target="_blank" rel="noopener noreferrer"
+                class="project-btn project-btn-secondary" aria-label="Live Demo for MediGuru">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: VidGenius -->
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-category-wrapper">
+                <span class="project-category">AI Video Summarizer</span>
+              </div>
+              <h3 class="project-title">VidGenius</h3>
+            </div>
+
+            <p class="project-description">
+              An AI-powered video analysis application that converts video/audio content into transcripts and enables
+              users to summarize and interact with the information using AI.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Whisper</span>
+              <span class="tech-tag">Embeddings</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">LLMs</span>
+            </div>
+
+            <div class="project-status-note">
+              <span class="status-indicator"></span>
+              <span>Project Repository &amp; Architecture Details</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Practical Exposure</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <p class="section-subtitle">
+            Hands-on training and practical exposure to machine learning workflows and data science practices.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper reveal">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role">Data Science Intern / Intern-Trainee</span>
+                  <h3 class="timeline-company">iStudio</h3>
+                </div>
+                <div class="timeline-badge-group">
+                  <span class="timeline-period">July 2026 – September 2026</span>
+                  <span class="timeline-type">3-Month Internship-cum-Training</span>
+                </div>
+              </div>
+
+              <div class="timeline-domain">
+                <span class="domain-label">Domain:</span> <strong>Data Science</strong>
+              </div>
+
+              <p class="timeline-description">
+                Completed a three-month internship-cum-training program focused on Data Science, gaining practical
+                exposure to data analysis, machine learning workflows, model development, and applied data science
+                practices.
+              </p>
+
+              <div class="timeline-skills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">NumPy</span>
+                <span class="skill-pill">Pandas</span>
+                <span class="skill-pill">Data Analysis</span>
+                <span class="skill-pill">Data Visualization</span>
+                <span class="skill-pill">Machine Learning</span>
+                <span class="skill-pill">Model Evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Academic Foundation</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Solid foundation in Computer Science Engineering with specialized coursework in AI and Machine Learning.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card card reveal">
+            <div class="edu-header">
+              <div class="edu-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="edu-info">
+                <span class="edu-status-tag">Final Year Student</span>
+                <h3 class="edu-degree">B.Tech — Computer Science &amp; Engineering</h3>
+                <p class="edu-spec">Specialization in Artificial Intelligence, Machine Learning &amp; Deep Learning</p>
+              </div>
+            </div>
+
+            <div class="edu-details-grid">
+              <div class="edu-detail-item">
+                <span class="detail-label">University</span>
+                <span class="detail-value">Teerthanker Mahaveer University (TMU)</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Moradabad, India</span>
+              </div>
+              <div class="edu-detail-item">
+                <span class="detail-label">Current Academic Score</span>
+                <span class="detail-value highlight-score">CGPA 9.115</span>
+              </div>
+            </div>
+
+            <div class="edu-highlights">
+              <span class="highlight-title">Core Academic Focus Areas:</span>
+              <div class="highlights-chips">
+                <span class="chip">Artificial Intelligence</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">Deep Learning</span>
+                <span class="chip">Data Structures &amp; Algorithms</span>
+                <span class="chip">Database Management Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Categorized technical stack based on practical projects and coursework.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Programming -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <h3 class="category-name">Programming</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <h3 class="category-name">Machine Learning</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Regression</span>
+              <span class="skill-tag">Classification</span>
+              <span class="skill-tag">Feature Engineering</span>
+              <span class="skill-tag">Model Evaluation</span>
+            </div>
+          </div>
+
+          <!-- Deep Learning -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <h3 class="category-name">Deep Learning</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">CNNs</span>
+              <span class="skill-tag">Deep Learning</span>
+            </div>
+          </div>
+
+          <!-- AI / Generative AI -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <h3 class="category-name">AI / Generative AI</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">LLMs</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Agentic AI</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">Embeddings</span>
+              <span class="skill-tag">Vector Databases</span>
+              <span class="skill-tag">MCP</span>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <h3 class="category-name">Data Science</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+          </div>
+
+          <!-- Development -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+              <h3 class="category-name">Development</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              <h3 class="category-name">Databases</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">ChromaDB</span>
+            </div>
+          </div>
+
+          <!-- Cloud / Deployment -->
+          <div class="skill-category-card card reveal">
+            <div class="skill-category-header">
+              <svg class="cat-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <h3 class="category-name">Cloud / Deployment</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Basic Azure</span>
+              <span class="skill-tag">Cloud Deployment</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info reveal">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="section-title">Let's build something with AI.</h2>
+            <p class="section-subtitle">
+              I'm currently looking for opportunities to learn, build, and contribute in AI/ML and Data Science roles.
+            </p>
+
+            <div class="contact-links-list">
+              <a href="https://linkedin.com/in/krishna-gupta-b7a561317/" target="_blank" rel="noopener noreferrer"
+                class="contact-link-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="link-label">LinkedIn</span>
+                  <span class="link-value">linkedin.com/in/krishna-gupta-b7a561317/</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/itskrishn07" target="_blank" rel="noopener noreferrer"
+                class="contact-link-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="link-label">GitHub</span>
+                  <span class="link-value">github.com/itskrishn07</span>
+                </div>
+              </a>
+
+              <div class="contact-link-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="link-label">Email</span>
+                  <span class="link-value">
+                    <!-- REPLACE WITH YOUR EMAIL (e.g. krishna.gupta@example.com) -->
+                    krishnagupta2359104@gmail.com
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper card reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                <span class="form-error" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                <span class="form-error" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Your message..."
+                  required></textarea>
+                <span class="form-error" id="message-error">Please enter your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">&copy; 2026 Krishna Gupta. Built with curiosity and code.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/itskrishn07" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+          aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/krishna-gupta-b7a561317/" target="_blank" rel="noopener noreferrer"
+          class="footer-social-link" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+          </svg>
+        </a>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 
-    <script src="app.js"></script>
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
+
 </html>
