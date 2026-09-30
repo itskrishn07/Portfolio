@@ -588,7 +588,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    -------------------------------------------------------------------------- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
